@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Sora', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/* Header */
+
+#topbar {
+    background-color: #c76277 !important;
+    width: 100%;
+}
+
+#topbar span {
+    padding: 0px 10px;
+    font-size: 0.8em;
+    font-weight: 200;
+    color: white;
+}
+
+#topbar span i {
+    margin-right: 5px;
+}
+
+.navbar-brand span {
+    font-weight: 800;
+    color: #c76277;
+    margin-left: -5px;
+    font-size: 1.1em;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+#navbarNav {
+    margin-right: 5px;
+}
+
+.nav-item {
+    padding: 0px 10px;
+    letter-spacing: 0.05em;
+}
+
+.nav-item a {
+    color: #c76277 !important;
+}
+
+.nav-item a:hover {
+    color: #c52646 !important;
+}
+
+.active {
+    color: #c52646 !important;
+    font-weight: 800;
+}
+
+
+/* Estilos del Slider */
+
+.slider-portada {
+    height: 500px;
+    background: #42275a6c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #734b6d80, #42275a69), url(img/psicolcovid.webp);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #734b6d91, #6f187a77), url(img/psicolcovid.webp);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: cover !important;
+}
+
+.sp1 {
+    background: -webkit-linear-gradient(to right, #734b6d80, #42275a69), url(img/psicologianinos.webp);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #734b6d91, #6f187a77), url(img/psicologianinos.webp);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.labelslider {
+    color: white;
+    text-align: left !important;
+    top: 150px;
+}
+
+.labelslider h1 {
+    color: white;
+    font-size: 46px;
+    font-weight: 800;
+}
+
+.labelslider p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.s1 {
+    text-align: right !important;
+}
+
+
+/* Estilos del Bloque 1 */
+
+.psicologia:before {
+    height: 70px;
+    /*Offset del link anchor */
+    content: "";
+    display: block;
+}
+
+.psicologia {
+    text-align: center;
+}
+
+.psicologia h1 {
+    color: #944958;
+    /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-weight: 800;
+    font-size: 4rem;
+    letter-spacing: 0.05em;
+    margin: 60px 0px 40px 0px;
+}
+
+.bloque1 div {
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.bloque1 img {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: transform .5s;
+}
+
+.bloque1 img:hover {
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+}
+
+.parent {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #944958;
+    color: white;
+}
+
+.child {
+    flex: 0 1 300px;
+    flex: 1 1 300px;
+    padding: 80px;
+}
+
+.contactinfo {
+    margin-left: 80px;
+    margin-top: 90px;
+    width: 400px;
+    background: #9449586b;
+    padding: 40px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contactinfo h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.info {
+    position: relative;
+    margin: 20px 0;
+}
+
+.info li {
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+    color: white;
+}
+
+.info li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+    opacity: 0.5;
+}
+
+.info li span:nth-child(2) {
+    opacity: 0.5;
+}
+
+.info li:hover span:nth-child(1),
+.info li:hover span:nth-child(2) {
+    opacity: 1;
+}
+
+.sci {
+    background: white;
+    margin-top: 50px;
+    padding: 15px 0;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.sci li a {
+    text-decoration: none;
+}
+
+.sci li a:hover {
+    opacity: 0.5;
+}
+
+.formulario1 form h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.child .formulario1 {
+    padding: 30px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.child .formulario1 .boton-contacto {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#exampleFormControlTextarea1 {
+    resize: none;
+}
+
+
+/*Estilos Materialize */
+
+
+/* Estilos del Footer */
+
+.footer1 {
+    height: 80px;
+    display: grid;
+    place-items: center;
+    color: rgb(41, 41, 41);
+}
+
+.footer1 a {
+    color: #2C3E50;
+    font-weight: 600;
+}
+
+.footer1 p {
+    font-size: 0.9rem;
+    padding: 30px;
+}
+
+
+/* Tablet */
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand span {
+        font-size: 0.9em;
+    }
+    .nav-item a {
+        font-size: 14px;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+    .labelslider {
+        top: 100px;
+    }
+    .labelslider h1 {
+        font-size: 36px;
+    }
+    .labelslider p {
+        font-size: 18px;
+    }
+    .contactinfo {
+        margin-left: 10px;
+        margin-top: 5px;
+        width: 600px;
+        background: #9449586b;
+        padding: 40px;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    }
+    .child .formulario1 {
+        margin-top: -50px !important;
+        width: 700px;
+    }
+}
+
+
+/*Celular */
+
+@media only screen and (max-width: 600px) {
+    /* Header */
+    .navbar-brand span {
+        margin-left: -10px !important;
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+    .navbar-brand img {
+        width: 55px;
+        height: 55px;
+    }
+    #topbar {
+        display: inline-block;
+        text-align: center;
+    }
+    #topbar span {
+        padding: 0;
+        font-size: 0.7em;
+    }
+    .navbar-light .navbar-toggler {
+        border: 3px solid rgb(0, 0, 0) !important;
+    }
+    .navbar-toggler {
+        font-size: 1em !important;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+    /* Estilos del Slider */
+    .labelslider {
+        top: 100px;
+    }
+    .labelslider h1 {
+        font-size: 26px;
+    }
+    .labelslider p {
+        font-size: 16px;
+    }
+    .psicologia h1 {
+        font-size: 2rem;
+    }
+    .contactinfo {
+        margin-left: -60px !important;
+        margin-top: 5px;
+        width: 320px;
+        background: #9449586b;
+        padding: 0px 40px 20px 40px;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    }
+    .child .formulario1 {
+        padding: 0px;
+        margin-top: -50px !important;
+        margin-right: 0px;
+        margin-left: -55px !important;
+        width: 320px;
+    }
+    .child .formulario1 .boton-contacto {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #exampleFormControlTextarea1 {
+        resize: none;
+    }
+}
